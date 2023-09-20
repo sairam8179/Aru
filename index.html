@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total{
+            border: 3px solid;
+            display: flex;
+            height: 270px;
+            width: 1090px;
+            margin: 5px; 
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 60px;
+            width: 1100px;
+            background-image: linear-gradient(pink,yellow);
+            text-align:center; 
+        }
+        .months{
+            border: 2px solid black;
+            height: 250px;
+            width: 90px;
+            margin: 8px;
+            border-radius: 5px;
+            background-image: linear-gradient(pink,yellow);
+            text-align: center;
+        }
+        .dot{
+            padding:10px;
+            margin: 0px;
+        }
+        .dd{
+            border: 2px solid;
+            height: 250px;
+            width: 800px;
+            margin: 8px;
+            border-radius: 6px;
+            background-image: linear-gradient(90deg ,pink,yellow);
+        }
+        .dates{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+        }
+        #change{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .move{
+            display: flex;
+            flex-direction: row;
+            justify-content:left;
+            
+        }
+        .holidays{
+            border: 2px solid black;
+            height: 250px;
+            width: 140px;
+            margin: 8px;
+            border-radius: 5px;
+           text-align: center;
+            background-image:linear-gradient(pink,yellow);
+        }
+        .fest{
+            padding: 10px;  
+            margin: 0px; 
+            flex-direction: column;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" ><h1 style="color:blue;"> Calender </h1>
+    </div>
+    <div class="total">
+    <div class="months">Months
+<ul class="dot" type="none">
+    <li>January</li>
+    <li style="color: red;">Febuary</li>
+    <li>March</li>
+    <li>April</li>
+    <li>May</li>
+    <li>June</li>
+    <li>July</li>
+    <li>August</li>
+    <li>September</li>
+    <li>October</li>
+    <li>November</li>
+    <li>December</li>
+</ul>
+    </div>
+    <div class="dd" style="display: inline-block;">
+        <ul class="dates" type="none">
+           <li style="color: red;"> Sun </li>
+           <li> Mon</li>
+           <li> Tue</li>
+           <li> Wed</li>
+           <li> Thu</li>
+           <li> Fri</li>
+           <li> Sat</li>
+        </ul>
+        <ul id="change">
+            <ol style="color: red;">1</ol>
+            <ol>2</ol>
+            <ol>3</ol>
+            <ol>4</ol>
+            <ol>5</ol>
+            <ol>6</ol>
+            <ol>7</ol>
+            </ul>
+           <ul id="change">
+            <ol style="color: red;">8</ol>
+            <ol>9</ol>
+            <ol>10</ol>
+            <ol>11</ol>
+            <ol>12</ol>
+            <ol>13</ol>
+            <ol>14</ol>
+            </ul>
+            <ul id="change">
+            <ol style="color: red;">15</ol>
+            <ol>16</ol>
+            <ol>17</ol>
+            <ol>18</ol>
+            <ol>19</ol>
+            <ol>20</ol>
+            <ol>21</ol>
+        </ul>
+        <ul id="change">
+            <ol style="color: red;">22</ol>
+            <ol>23</ol>
+            <ol>24</ol>
+            <ol>25</ol>
+            <ol>26</ol>
+            <ol>27</ol>
+            <ol>28</ol>
+        </ul>
+        <!-- <ul class="move">
+            <ol style="color: red;">29</ol>
+            <ol>30</ol>
+            <ol>31</ol> 
+        </ul> -->
+        </li>
+    </div>
+    <div class="holidays">Holidays
+        <div class="fest" type="none">
+            <ul style="display:inline;">05-02-2023
+                Ravidas jayanthi
+            </ul>
+            <ul>
+                14-02-2023
+                Black day
+            </ul>
+            <ul>
+                18-02-2023
+                Shivaratri
+            </ul>
+            <ul>
+                19-02-2023
+                Shivaji jayanthi
+            </ul>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
