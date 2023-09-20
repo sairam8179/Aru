@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{
+            background-color: aqua;
+            padding: 40px;
+            width: 700px;
+            border: 2px solid;
+            border-radius: 6px;
+            display: flex;
+        }
+        .container{
+            display: flex;
+            width: 700px;
+            flex-wrap:nowrap;
+            gap: 5px;
+            border: 2px solid;
+            padding: 20px;
+        }
+        .container1{
+            display: flex;
+            width: 850px;
+            flex-wrap:nowrap;
+            gap: 5px;
+            border: 2px solid;
+            padding: 20px;
+        }
+        .container2{
+            display: flex;
+            /* width: 850px; */
+            flex-wrap:nowrap;
+            gap: 5px;
+            border: 2px solid;
+            padding: 20px;
+        }
+        .sec{
+            background-color: aqua;
+            padding: 40px;
+            width: 100px;
+            border: 2px solid;
+            border-radius: 6px;
+            display: flex; 
+        }
+        .image{
+            height:308px;
+            width:300px;
+            background-color: blue;
+        }
+        .rainbow{
+            height:308px;
+            width:300px;
+            background-color:whitesmoke;
+        }
+        .flex{
+            height: 308px;
+            width: 310px;
+            background-color:pink;
+        }
+        .one{
+            display: flex;
+            justify-content:space-between;
+        }
+        .two{
+            display: flex;
+            justify-content: center;
+        }
+        .three{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Absolute Positions</h1>
+    <div class="image">
+        <div style="position: absolute;"><img src="./images/pencils.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position:absolute;top:287px;"><img src="./images/pencils.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: absolute;top:183px;left: 107px;"><img src="./images/pencils.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: absolute;top:80px;left:206px;"><img src="./images/pencils.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: absolute;top:286px;left:206px;"><img src="./images/pencils.jpg" alt="image" height="100px" width="100px"></div>
+    </div>
+    <h1>Using Relative position</h1>
+    <div class="rainbow">
+        <div style="position:relative;"><img src="./images/rainbow.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: relative;left: 100px;"><img src="./images/rainbow.jpg" alt="image" height="100px" width="100px"></div>
+        <div><img src="./images/rainbow.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: relative;left:200px;bottom: 104px;"><img src="./images/rainbow.jpg" alt="image" height="100px" width="100px"></div>
+        <div style="position: relative;bottom:414px;left: 200px;"><img src="./images/rainbow.jpg" alt="image" height="100px" width="100px"></div>
+    </div>
+    <h1>Using Flex position</h1>
+    <div class="flex">
+        <div class="one">
+        <div><img src="./images/water falls.jpg" alt="image" height="100px" width="100px"></div>
+        <div><img src="./images/water falls.jpg" alt="image" height="100px" width="100px"></div>
+    </div>
+    <div class="two">
+        <div><img src="./images/water falls.jpg" alt="image" height="100px" width="100px"></div>
+    </div>
+    <div class="three">
+        <div><img src="./images/water falls.jpg" alt="image" height="100px" width="100px"></div>
+        <div><img src="./images/water falls.jpg" alt="image" height="100px" width="100px"></div>
+    </div>
+    </div>
+    <h2>4 Columns</h2>
+    <div class="container">
+<div class="items"style="order: 1;">Friendship Day was first proposed in Paraguay in 1958 by Joyce Hall. It was a holiday involving the celebration of friendships through a global holiday. The original date of celebration was 2 August, though it has since been moved to 7 August due to de-synchronisation in the United States.</div>
+<div class="items"style="order: 4;">To honor Friendship Day, in 1998, Nane Annan named Winnie the Pooh the world's Ambassador of Friendship at the United Nations.</div>
+<div class="items"style="order: 2;">The idea of a Global Friendship Day was first proposed on 20 July 1958 by Dr. Ramon Artemio Bracho during a dinner with friends in Puerto Pinasco, a town on the River Paraguay about 200 miles (320 km) north of Asuncion, Paraguay.</div>
+<div class="items"style="order:3 ;">During said meeting, the World Friendship Crusade was born. The World Friendship Crusade is a foundation that promotes friendship and fellowship among all human beings, regardless of race, color or religion.</div>
+    </div><br>
+    <h2>5 Columns</h2>
+    <div class="container1"  >
+        <div class="sec" style="order: 1;;">Friendship Day was first proposed in Paraguay in 1958 by Joyce Hall. It was a holiday involving the celebration of friendships through a global holiday. The original date of celebration was 2 August, though it has since been moved to 7 August due to de-synchronisation in the United States</div>
+        <div class="sec" style="flex: 1,2,2;">To honor Friendship Day, in 1998, Nane Annan named Winnie the Pooh the world's Ambassador of Friendship at the United Nations</div>
+        <div class="sec">The idea of a Global Friendship Day was first proposed on 20 July 1958 by Dr. Ramon Artemio Bracho during a dinner with friends in Puerto Pinasco, a town on the River Paraguay about 200 miles (320 km) north of Asuncion, Paraguay.</div>
+        <div class="sec">During said meeting, the World Friendship Crusade was born. The World Friendship Crusade is a foundation that promotes friendship and fellowship among all human beings, regardless of race, color or religion.</div>
+        <div class="sec">The World Friendship Crusade has lobbied the United Nations for several years to recognize 30 July as World Friendship Day; finally, in 2011, the General Assembly of the United Nations decided to designate 30 July as the International Day.</div>
+    </div>
+    <h2>6 Columns</h2>
+    <div class="container2">
+        <div class="sec" style="order: 4;">Friendship Day was first proposed in Paraguay in 1958 by Joyce Hall. It was a holiday involving the celebration of friendships through a global holiday. The original date of celebration was 2 August, though it has since been moved to 7 August due to de-synchronisation in the United States</div>
+        <div class="sec" style=" order:2;flex-grow:1;">To honor Friendship Day, in 1998, Nane Annan named Winnie the Pooh the world's Ambassador of Friendship at the United Nations</div>
+        <div class="sec"style="order: 6;">The idea of a Global Friendship Day was first proposed on 20 July 1958 by Dr. Ramon Artemio Bracho during a dinner with friends in Puerto Pinasco, a town on the River Paraguay about 200 miles (320 km) north of Asuncion, Paraguay.</div>
+        <div class="sec"style="order: 5;">During said meeting, the World Friendship Crusade was born. The World Friendship Crusade is a foundation that promotes friendship and fellowship among all human beings, regardless of race, color or religion.</div>
+        <div class="sec" style="order: 1;">The World Friendship Crusade has lobbied the United Nations for several years to recognize 30 July as World Friendship Day; finally, in 2011, the General Assembly of the United Nations decided to designate 30 July as the International Day.</div>
+        <div class="sec"style="order: 3;">The idea of a Global Friendship Day was first proposed on 20 July 1958 by Dr. Ramon Artemio Bracho during a dinner with friends in Puerto Pinasco, a town on the River Paraguay about 200 miles (320 km) north of Asuncion, Paraguay.</div>
+    </div>
+</body>
+</html>
