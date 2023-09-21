@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1060px;
+            border: 3px solid black;
+            padding: 10px;
+            background-image: linear-gradient(skyblue,white);
+        }
+        .gallery{
+            height: 60px;
+            width: 1040px;
+            background-color: aqua;
+            text-align: center; 
+            border-radius: 10px;
+        }
+        .one{
+            border: 2px solid black;
+            border-radius:10px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .two{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .three{
+            border: 2px solid black;
+            border-radius:10px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .four{
+            border: 2px solid black;
+            border-radius:10px;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        [title]{
+         border-radius:30px;
+        }
+        [title $="flower"]{
+            border: 5px solid red;
+        }
+        [title *="pet"]{
+            border: 3px solid blue;
+        }  
+        [title $="ing"]{
+            border: 3px brown;
+        }     
+        [alt="fry"]{
+           border-radius: 80px;
+           border: 8px solid pink;
+        }
+        [title ^="fruit"]{
+            border-radius: 50px;
+            border: 4px dotted green;
+        }
+        [title="strawberry"]{
+            border: 5px solid yellow;
+        }
+        [title="lionking"]{
+            border-radius: 50px;
+            border: 3px solid black;
+        }
+        .form{
+            margin: 40px;
+            border: 3px solid black;
+            width: 180px;
+            padding: 70px;
+        }
+        [type="text"]{
+            background-color: aqua;
+        }
+        [name="fname"]{
+            background-color:orange;
+        }
+        [id="adress"]{
+            border: 20px solid yellow;
+            background-color: pink;
+        }
+        [for="mnumber"]{
+            background-color:orange;
+        }
+        [type="tel"]{
+            background-color: blue;
+        }
+        [type="submit"]{
+           background-color: yellow;
+        }
+        [type="reset"]{
+           background-color:green;
+        }
+        .form{
+            background-image: linear-gradient(pink,skyblue);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="gallery"> <h1>Gallery </h1> </div>
+   <h3>FLOWERS</h3>
+    <div class="one">
+        <img src="./flower.jpeg" alt="flower" height="100px" width="100px" title="f-flower">
+        <img src="./flower2.jpeg" alt="flower" height="100px" width="100px" title="sun-flower">
+        <img src="./flower3.jpeg" alt="flower" height="100px" width="100px" title="rose-flower">
+        <img src="./flower4.jpeg" alt="flower" height="100px" width="100px" title="white-rose-flower">
+    </div>
+   <h3>PETS</h3>
+   <div class="two">
+        <img src="./pet1.jpeg" alt="flower" height="100px" width="100px" title="catpet">
+        <img src="./pet2.jpeg" alt="flower" height="100px" width="100px" title="dogpet">
+        <img src="./pet 3.jpeg" alt="flower" height="100px" width="100px" title="rabbitpet">
+        <img src="./pet4.jpeg" alt="flower" height="100px" width="100px" title="lionking">
+    </div>
+    <h3>VEGETABLES</h3>
+    <div class="three">
+            <img src="./tomato.jpeg" alt="fry" height="100px" width="100px" title="tomatoveg">
+            <img src="./vegetable 2.jpeg" alt="fry" height="100px" width="100px" title="cabbageveg">
+            <img src="./veg 3.jpeg" alt="fry" height="100px" width="100px" title="beansveg">
+            <img src="./veg 4.jpeg" alt="fry" height="100px" width="100px" title="kakarkayaveg">
+        </div>
+        <h3>FRUITS</h3>
+        <div class="four">
+            <img src="./fruit1.jpeg" alt="flower" height="100px" width="100px" title="fruitbanana">
+                <img src="./gua.jpeg" alt="flower" height="100px" width="100px" title="fruitgua">
+                <img src="./pine apple.jpeg" alt="flower" height="100px" width="100px" title="fruitapple">
+                <img src="./strawberry.jpeg" alt="flower" height="100px" width="100px" title="strawberry">
+            </div>
+            </div>
+            <div class="gundu">
+            <fieldset class="form">
+                <legend>SIGN UP</legend>
+        <label for="fname">First name:</label> 
+        <br><input type="text" name="fname" id="first name" placeholder="enter your name">   
+        <br><br><label for="sname">Second name</label>
+        <br><input type="text" name="sname" id="second name" placeholder="enter your name ">
+        <br><br><label for="gender">Gender</label>
+        <br><input type="radio" name="gender" id="male">Male
+        <br><input type="radio" name="gender" id="female">Female
+        <br><br><textarea name="Adress" id="adress" cols="10" rows="2">Adress</textarea>
+        <br><br><label for="dob">DOB</label>
+        <br><input type="date" name="dob" id="dob">
+        <br><br><label for="mnumber">Mobile number </label>
+        <br><input type="tel" pattern="0-9"{10} placeholder="mobile number">
+        <br><br><input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <br><a>Alreadyhaveaccount</a>
+        </form>
+        </fieldset>
+        </div>
+        <!-- <div>
+            <h1>Descendent Selector</h1>
+            <p>1000k Coders</p>
+            <p>1000k Coders</p>
+            <p>1000k Coders</p>
+        </div> -->
+</body>
+</html>
